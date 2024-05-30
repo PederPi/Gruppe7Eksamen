@@ -1,0 +1,9 @@
+version: "3"
+services:
+    webserver:
+        image: php8.2-apache
+        ports:
+        - "8080:80"
+        volumes:
+        - ./web:/var/www/html
+        restart: always
