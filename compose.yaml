@@ -3,7 +3,7 @@ services:
     webserver:
         image: php8.2-apache
         ports:
-        - "8080:80"
-        volumes:
-        - ./web:/var/www/html
+            - "8080:80"
         restart: always
+        volumes:
+            - ./web:/var/www/html
